@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="mx-auto">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/pricing.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+  <script language="javascript" type="text/javascript" src="./js/pricing.js"></script>
+  <title>Frontend Mentor | [Kilian]</title>
+</head>
+<body class="pricing mx-auto my-60-top">
+  <div class="pricing__wrapper mx-auto">
+      <h1 class="pricing__title">Our Pricing</h1>
+      <div class="pricing__switch mx-24 my-30-top">
+          <div class="switch__annually">Annually</div>  
+          <div class="switch__toggle mx-24 ">
+            <label class="toggle__basic" for="toggle">
+              <input type="checkbox" name="toggle" id="toggle">
+              <div class="toggle__circle"></div>
+            </label>
+          </div>
+          <div class="switch__monthly">Monthly</div>
+      </div><!--end .pricing__switch--> 
+      <div class="pricing__boxwrapper mx-auto  my-30-top"> 
+        <div class="pricing__box mx-auto border-rd-lg my-24-top">
+            <div class="box__title"><h2>Basic</h2></div>
+            <div class="box__price py-top py-bottom">
+                <div class="price__currency">&dollar;</div>
+                <div class="price__value"><span class="value" data-annually="199.99" data-monthly="19.99">199.99</span></div>
+            </div>
+            <div class="box__storage">500 GB Storage</div>
+            <div class="box__allowedUser">2 Users Allowed</div>
+            <div class="box__sendUpto">Send up to 3 GB</div>
+            <div class="box_btn my-1 my-18-top" >
+              <button class="btn__learnMore border-rd-sm">Learn More</button>
+            </div>
+        </div><!--end .pricing__box-->
+        <div class="pricing__box mx-auto border-rd-lg my-24-top">
+            <div class="box__title"><h2>Professional</h2></div>
+            <div class="box__price py-top py-bottom">
+              <div class="price__currency">&dollar;</div>
+              <div class="price__value"><span class="value" data-annually="249.99" data-monthly="24.99">249.99</span></div>
+            </div>
+            <div class="box__storage">1 TB Storage</div>
+            <div class="box__allowedUser">5 Users Allowed</div>
+            <div class="box__sendUpto">Send up to 10 GB</div>
+            <div class="box_btn my-1 my-18-top" >
+                <button class="btn__learnMore border-rd-sm">Learn More</button>
+            </div>      
+        </div><!--end .pricing__box-->
+        <div class="pricing__box mx-auto border-rd-lg my-24-top">
+            <div class="box__title"><h2>Master</h2></div>
+            <div class="box__price py-top py-bottom">
+                <div class="price__currency">&dollar;</div>
+                <div class="price__value"><span class="value" data-annually="399.99" data-monthly="39.99">399.99</span></div>
+            </div>
+            <div class="box__storage">2 TB Storage</div>
+            <div class="box__allowedUser">10 Users Allowed</div>
+            <div class="box__sendUpto">Send up to 20 GB</div>
+            <div class="box_btn my-1 my-18-top" >
+                <button class="btn__learnMore border-rd-sm">Learn More</button>
+            </div>      
+        </div><!--end .pricing__box-->
+      </div><!--end .pricing__boxwrapper-->
+  </div><!--end .pricing__wrapper-->
+  <div class="pricing__attribution my-24-top">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Kilian</a>. 
+      Coded by <a href="#">Ramona</a>.
+  </div><!--end .pricing_attribution-->
+</body><!--end .pricing-->
+</html>

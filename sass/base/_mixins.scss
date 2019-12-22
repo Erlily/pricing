@@ -1,0 +1,20 @@
+/*
+    Mixins
+*/
+@mixin gradient ($direction:right){
+    background-image: linear-gradient(to $direction, $lightGradientColor 0%, $darkGradientColor 100%);
+}
+@mixin backgroundSmall {
+    background-image:
+    url(../images/bg-top.svg);
+    background-position: 220px -35px;
+    background-repeat: no-repeat;
+    background-size: 88%;
+}
+@mixin backgroundLarge {
+    background-image:
+    url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+    background-position: top right, bottom left;
+    background-repeat: no-repeat;
+    background-size: 25%, 25%;
+}
