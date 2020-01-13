@@ -1,0 +1,43 @@
+/**** SWITCH ****/
+.pricing__switch {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $lightColor;
+}
+@media (min-width:376px) {
+    .pricing__switch {
+        justify-content: center;
+    }
+}
+.switch__toggle {
+    display: inline-block;
+}
+.toggle__basic {
+    display: flex;
+    align-items: center;
+    padding: 0 3px;
+    width:46px;
+    height: 29px;
+    border-radius: 23px;
+    @include gradient();
+    cursor: pointer;
+    &:hover {
+        background-image: none;
+        background-color: $lightGradientColor;
+    }
+    input{
+        display: none;
+        &:checked + .toggle__circle{
+            margin-left: 25px;
+        } 
+    }
+}
+.toggle__circle{
+    transition: margin-left 0.2s ease-in-out;
+    margin-left: 0;
+    background-color: white;
+    height: 21px;
+    width: 21px;
+    border-radius:50%;
+}
